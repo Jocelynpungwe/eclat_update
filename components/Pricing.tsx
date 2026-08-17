@@ -55,9 +55,7 @@ const Pricing = () => {
       id="pricing"
       className="relative overflow-hidden bg-[var(--background)] py-16 sm:py-20 lg:py-24"
     >
-      {/* =====================================================
-          BACKGROUND DECORATION
-      ====================================================== */}
+      {/* Background Decoration */}
 
       <div
         aria-hidden="true"
@@ -70,9 +68,7 @@ const Pricing = () => {
       />
 
       <div className="container relative z-10">
-        {/* =====================================================
-            SECTION HEADER
-        ====================================================== */}
+        {/* Section Header */}
 
         <div className="mx-auto max-w-3xl text-center">
           <span className="section-label justify-center">Packages</span>
@@ -91,9 +87,7 @@ const Pricing = () => {
           </p>
         </div>
 
-        {/* =====================================================
-            PACKAGE CARDS
-        ====================================================== */}
+        {/* Package Cards */}
 
         <div className="mx-auto mt-9 grid max-w-6xl gap-5 sm:mt-11 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {packages.map((pkg) => (
@@ -120,9 +114,7 @@ const Pricing = () => {
                 }
               `}
             >
-              {/* =================================================
-                  POPULAR BADGE
-              ================================================== */}
+              {/* Popular Badge */}
 
               {pkg.popular && (
                 <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
@@ -133,33 +125,25 @@ const Pricing = () => {
                 </div>
               )}
 
-              {/* =================================================
-                  ICON
-              ================================================== */}
+              {/* Icon */}
 
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--secondary-light)] text-[var(--primary)]">
                 <Sparkles size={20} />
               </div>
 
-              {/* =================================================
-                  PACKAGE NAME
-              ================================================== */}
+              {/* Package Name */}
 
               <h3 className="mt-4 text-xl font-bold leading-tight text-[var(--dark)] sm:text-2xl">
                 {pkg.name}
               </h3>
 
-              {/* =================================================
-                  DESCRIPTION
-              ================================================== */}
+              {/* Description */}
 
               <p className="mt-2 text-sm leading-6 text-slate-500">
                 {pkg.description}
               </p>
 
-              {/* =================================================
-                  PRICE
-              ================================================== */}
+              {/* Price */}
 
               <div className="mt-5 border-y border-slate-100 py-4">
                 <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-slate-400">
@@ -175,13 +159,11 @@ const Pricing = () => {
                 </p>
               </div>
 
-              {/* =================================================
-                  FEATURES
-              ================================================== */}
+              {/* Features */}
 
               <div className="mt-5">
                 <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--dark)]">
-                  What's included
+                  What&apos;s included
                 </p>
 
                 <ul className="space-y-2.5">
@@ -200,9 +182,7 @@ const Pricing = () => {
                 </ul>
               </div>
 
-              {/* =================================================
-                  CTA
-              ================================================== */}
+              {/* CTA */}
 
               <div className="mt-6">
                 <Link
@@ -240,15 +220,11 @@ const Pricing = () => {
           ))}
         </div>
 
-        {/* =====================================================
-            CUSTOM CLEANING CTA
-        ====================================================== */}
+        {/* Custom Cleaning CTA */}
 
         <div className="mx-auto mt-8 max-w-6xl overflow-hidden rounded-[1.5rem] bg-[var(--dark)] px-5 py-7 text-white sm:mt-10 sm:px-8 sm:py-8">
           <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
-            {/* =================================================
-                CTA TEXT
-            ================================================== */}
+            {/* CTA Text */}
 
             <div className="max-w-2xl">
               <div className="flex items-center gap-2">
@@ -265,14 +241,12 @@ const Pricing = () => {
 
               <p className="mt-2 max-w-xl text-sm leading-6 text-white/60">
                 Have a larger space, recurring cleaning needs, or a specific
-                request? Tell us what you're looking for and we'll help create
-                the right plan.
+                request? Tell us what you&apos;re looking for and we&apos;ll
+                help create the right plan.
               </p>
             </div>
 
-            {/* =================================================
-                CTA BUTTON
-            ================================================== */}
+            {/* CTA Button */}
 
             <Link
               href="/booking"

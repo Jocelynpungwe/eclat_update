@@ -77,8 +77,9 @@ const HowItWorks = () => {
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base sm:leading-8">
-            We've made the process simple. Tell us what you need, we'll take
-            care of the details, and you can get back to enjoying your space.
+            We&apos;ve made the process simple. Tell us what you need,
+            we&apos;ll take care of the details, and you can get back to
+            enjoying your space.
           </p>
         </div>
 
@@ -88,6 +89,7 @@ const HowItWorks = () => {
 
         <div className="relative mx-auto mt-12 max-w-6xl sm:mt-14 lg:mt-16">
           {/* Desktop connecting line */}
+
           <div
             aria-hidden="true"
             className="absolute left-[12.5%] right-[12.5%] top-[46px] hidden h-px bg-slate-200 lg:block"
@@ -105,19 +107,23 @@ const HowItWorks = () => {
 
                   <div className="relative h-full rounded-[1.5rem] border border-slate-100 bg-white p-5 shadow-[0_10px_35px_rgba(11,31,42,0.06)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(11,31,42,0.11)] sm:p-6">
                     {/* Number + Icon */}
+
                     <div className="relative flex items-center justify-between">
                       {/* Step number */}
+
                       <span className="text-sm font-black tracking-wider text-slate-200 transition-colors duration-300 group-hover:text-cyan-100">
                         {step.number}
                       </span>
 
                       {/* Icon */}
+
                       <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--secondary-light)] text-[var(--primary)] transition-all duration-300 group-hover:bg-[var(--primary)] group-hover:text-white group-hover:shadow-lg">
                         <Icon size={22} />
                       </div>
                     </div>
 
                     {/* Content */}
+
                     <h3 className="mt-6 text-lg font-bold text-[var(--dark)] sm:text-xl">
                       {step.title}
                     </h3>
@@ -127,6 +133,7 @@ const HowItWorks = () => {
                     </p>
 
                     {/* Bottom accent */}
+
                     <div className="mt-6 h-1 w-10 overflow-hidden rounded-full bg-slate-100">
                       <div className="h-full w-0 rounded-full bg-[var(--primary)] transition-all duration-500 group-hover:w-full" />
                     </div>
@@ -148,7 +155,7 @@ const HowItWorks = () => {
             </span>
 
             <h3 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
-              Let's get your space looking its best.
+              Let&apos;s get your space looking its best.
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-white/60 sm:text-base">

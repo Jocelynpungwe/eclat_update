@@ -73,12 +73,14 @@ const About = () => {
 
           <div className="relative order-1 lg:order-none">
             {/* Decorative background shape */}
+
             <div
               aria-hidden="true"
               className="absolute -bottom-5 -right-5 -z-10 hidden h-[85%] w-[85%] rounded-[2rem] border-2 border-cyan-100 sm:block"
             />
 
             {/* Image wrapper */}
+
             <div className="relative overflow-hidden rounded-[2rem] bg-slate-100 shadow-[0_25px_70px_rgba(11,31,42,0.14)]">
               <div className="relative aspect-[4/3] w-full sm:aspect-[16/11]">
                 <Image
@@ -91,6 +93,7 @@ const About = () => {
                 />
 
                 {/* Image gradient */}
+
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--dark)]/45 via-transparent to-transparent" />
               </div>
 
@@ -124,17 +127,20 @@ const About = () => {
 
           <div className="order-2 lg:order-none">
             {/* Small label */}
+
             <div className="section-label">Why Choose Éclat</div>
 
             {/* Main heading */}
+
             <h3 className="mt-2 max-w-2xl text-[clamp(1.9rem,4vw,3rem)] font-bold leading-[1.1] tracking-tight text-[var(--dark)]">
-              We don't just clean.
+              We don&apos;t just clean.
               <span className="block text-[var(--primary)]">
                 We make spaces feel better.
               </span>
             </h3>
 
             {/* Main paragraph */}
+
             <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600">
               At Éclat Services de Nettoyage, we take the stress out of keeping
               your space clean. We provide professional, reliable, and
@@ -143,6 +149,7 @@ const About = () => {
             </p>
 
             {/* Second paragraph */}
+
             <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base sm:leading-8">
               Whether you need regular cleaning for your home, a deep clean when
               your space needs extra attention, or dependable service for your
@@ -156,6 +163,7 @@ const About = () => {
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {/* Professional */}
+
               <div className="group rounded-2xl border border-slate-100 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:p-5">
                 <div className="flex items-start gap-3">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--secondary-light)] text-[var(--primary)] transition-colors duration-300 group-hover:bg-[var(--primary)] group-hover:text-white">
@@ -175,6 +183,7 @@ const About = () => {
               </div>
 
               {/* Reliable */}
+
               <div className="group rounded-2xl border border-slate-100 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:p-5">
                 <div className="flex items-start gap-3">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--secondary-light)] text-[var(--primary)] transition-colors duration-300 group-hover:bg-[var(--primary)] group-hover:text-white">
@@ -192,6 +201,7 @@ const About = () => {
               </div>
 
               {/* Customer First */}
+
               <div className="group rounded-2xl border border-slate-100 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:p-5">
                 <div className="flex items-start gap-3">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--secondary-light)] text-[var(--primary)] transition-colors duration-300 group-hover:bg-[var(--primary)] group-hover:text-white">
@@ -211,6 +221,7 @@ const About = () => {
               </div>
 
               {/* Attention to Detail */}
+
               <div className="group rounded-2xl border border-slate-100 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:p-5">
                 <div className="flex items-start gap-3">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--secondary-light)] text-[var(--primary)] transition-colors duration-300 group-hover:bg-[var(--primary)] group-hover:text-white">
@@ -223,7 +234,7 @@ const About = () => {
                     </h4>
 
                     <p className="mt-1 text-sm leading-6 text-slate-500">
-                      We don't overlook the little things.
+                      We don&apos;t overlook the little things.
                     </p>
                   </div>
                 </div>
@@ -244,8 +255,8 @@ const About = () => {
                 <strong className="text-[var(--dark)]">
                   Your space matters.
                 </strong>{' '}
-                That's why we focus on dependable service, clear communication,
-                and quality results every time.
+                That&apos;s why we focus on dependable service, clear
+                communication, and quality results every time.
               </p>
             </div>
 
@@ -281,6 +292,7 @@ const About = () => {
 
         <div className="mt-16 grid overflow-hidden rounded-[1.5rem] border border-slate-100 bg-white shadow-[0_15px_45px_rgba(11,31,42,0.06)] sm:grid-cols-3 lg:mt-20">
           {/* Stat 1 */}
+
           <div className="flex items-center gap-4 border-b border-slate-100 p-5 sm:border-b-0 sm:border-r sm:p-6">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--secondary-light)] text-[var(--primary)]">
               <ShieldCheck size={21} />
@@ -296,6 +308,7 @@ const About = () => {
           </div>
 
           {/* Stat 2 */}
+
           <div className="flex items-center gap-4 border-b border-slate-100 p-5 sm:border-b-0 sm:border-r sm:p-6">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--secondary-light)] text-[var(--primary)]">
               <HeartHandshake size={21} />
@@ -311,6 +324,7 @@ const About = () => {
           </div>
 
           {/* Stat 3 */}
+
           <div className="flex items-center gap-4 p-5 sm:p-6">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--secondary-light)] text-[var(--primary)]">
               <Sparkles size={21} />

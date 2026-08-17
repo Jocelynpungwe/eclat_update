@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
   return (
     <section
       id="why-us"
-      className="relative overflow-hidden bg-[var(--dark)] py-20 text-white sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-[var(--dark)] py-16 text-white sm:py-20 lg:py-24"
     >
       {/* =====================================================
           BACKGROUND DECORATION
@@ -93,9 +93,9 @@ const WhyChooseUs = () => {
             <span className="block text-cyan-300">confident about.</span>
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/65 sm:text-base sm:leading-8">
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-white/65 sm:text-base sm:leading-7">
             We believe great cleaning is about more than making a space look
-            good. It's about creating an experience you can trust, from the
+            good. It&apos;s about creating an experience you can trust, from the
             first conversation to the final result.
           </p>
         </div>
@@ -104,22 +104,24 @@ const WhyChooseUs = () => {
             MAIN GRID
         ====================================================== */}
 
-        <div className="mt-12 grid gap-4 sm:mt-14 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-5">
+        <div className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
           {reasons.map((reason) => {
             const Icon = reason.icon
 
             return (
-              <div
+              <article
                 key={reason.title}
                 className="group rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-5 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-white/[0.10] sm:p-6"
               >
                 {/* Icon */}
+
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-300/10 text-cyan-300 transition-all duration-300 group-hover:bg-cyan-300 group-hover:text-[var(--dark)]">
-                  <Icon size={22} />
+                  <Icon size={22} strokeWidth={2} />
                 </div>
 
                 {/* Content */}
-                <h3 className="mt-5 text-lg font-bold text-white sm:text-xl">
+
+                <h3 className="mt-4 text-lg font-bold text-white sm:text-xl">
                   {reason.title}
                 </h3>
 
@@ -127,13 +129,14 @@ const WhyChooseUs = () => {
                   {reason.description}
                 </p>
 
-                {/* Bottom indicator */}
+                {/* Bottom Indicator */}
+
                 <div className="mt-5 flex items-center gap-2 text-xs font-semibold text-cyan-300">
-                  <CheckCircle2 size={15} />
+                  <CheckCircle2 size={15} strokeWidth={2.2} />
 
                   <span>Éclat standard</span>
                 </div>
-              </div>
+              </article>
             )
           })}
         </div>
@@ -142,12 +145,17 @@ const WhyChooseUs = () => {
             TRUST / CTA AREA
         ====================================================== */}
 
-        <div className="mt-12 overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur-md sm:mt-14 sm:p-8 lg:mt-16 lg:p-10">
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+        <div className="mt-10 overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur-md sm:mt-12 sm:p-8 lg:p-9">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             {/* Left */}
+
             <div className="max-w-2xl">
               <div className="flex items-center gap-2">
-                <BadgeCheck size={19} className="text-cyan-300" />
+                <BadgeCheck
+                  size={19}
+                  strokeWidth={2}
+                  className="text-cyan-300"
+                />
 
                 <span className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">
                   Our Promise
@@ -158,18 +166,19 @@ const WhyChooseUs = () => {
                 Your space deserves care you can count on.
               </h3>
 
-              <p className="mt-3 text-sm leading-7 text-white/60 sm:text-base">
+              <p className="mt-3 text-sm leading-6 text-white/60 sm:text-base">
                 We aim to make professional cleaning simple, dependable, and
-                stress-free. Tell us what you need and we'll help you find the
-                right solution.
+                stress-free. Tell us what you need and we&apos;ll help you find
+                the right solution.
               </p>
             </div>
 
             {/* Right */}
+
             <div className="shrink-0">
               <Link
                 href="/booking"
-                className="group inline-flex min-h-[52px] w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-bold text-[var(--dark)] transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-50 sm:w-auto sm:px-7"
+                className="group inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-[var(--dark)] shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-50 hover:shadow-xl sm:w-auto sm:px-7"
               >
                 Book Your Cleaning
                 <ArrowRight

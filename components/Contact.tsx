@@ -1,9 +1,7 @@
 'use client'
 
 import React, { FormEvent, useState } from 'react'
-import Link from 'next/link'
 import {
-  ArrowRight,
   CalendarDays,
   CheckCircle2,
   Clock3,
@@ -65,8 +63,8 @@ const Contact = () => {
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base sm:leading-8">
-            Tell us what you need and we'll help you find the right cleaning
-            service for your home or business.
+            Tell us what you need and we&apos;ll help you find the right
+            cleaning service for your home or business.
           </p>
         </div>
 
@@ -85,18 +83,20 @@ const Contact = () => {
             </div>
 
             <h3 className="mt-6 text-2xl font-bold sm:text-3xl">
-              Let's talk about your space.
+              Let&apos;s talk about your space.
             </h3>
 
             <p className="mt-4 text-sm leading-7 text-white/60 sm:text-base">
-              Whether you need a one-time cleaning or regular service, we're
-              here to help. Send us a request and we'll get back to you with the
-              next steps.
+              Whether you need a one-time cleaning or regular service,
+              we&apos;re here to help. Send us a request and we&apos;ll get back
+              to you with the next steps.
             </p>
 
             {/* Contact details */}
+
             <div className="mt-8 space-y-5">
               {/* Phone */}
+
               <a
                 href="tel:+10000000000"
                 className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.05] p-4 transition-all duration-300 hover:border-cyan-300/30 hover:bg-white/[0.08]"
@@ -113,6 +113,7 @@ const Contact = () => {
                   <p className="mt-1 text-sm font-semibold text-white">
                     873 455 6670 FR
                   </p>
+
                   <p className="mt-1 text-sm font-semibold text-white">
                     873 655 2430 EN
                   </p>
@@ -120,8 +121,9 @@ const Contact = () => {
               </a>
 
               {/* Email */}
+
               <a
-                href="mailto:hello@eclatcleaning.ca"
+                href="mailto:eclactservicecontact@gmail.com"
                 className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.05] p-4 transition-all duration-300 hover:border-cyan-300/30 hover:bg-white/[0.08]"
               >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-cyan-300/10 text-cyan-300">
@@ -140,6 +142,7 @@ const Contact = () => {
               </a>
 
               {/* Location */}
+
               <div className="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.05] p-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-cyan-300/10 text-cyan-300">
                   <MapPin size={18} />
@@ -151,12 +154,13 @@ const Contact = () => {
                   </p>
 
                   <p className="mt-1 text-sm font-semibold text-white">
-                    Ottawa & Gatineau
+                    Ottawa &amp; Gatineau
                   </p>
                 </div>
               </div>
 
               {/* Hours */}
+
               <div className="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.05] p-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-cyan-300/10 text-cyan-300">
                   <Clock3 size={18} />
@@ -175,6 +179,7 @@ const Contact = () => {
             </div>
 
             {/* Small promise */}
+
             <div className="mt-8 flex items-start gap-3 border-t border-white/10 pt-6">
               <CheckCircle2
                 size={19}
@@ -182,8 +187,8 @@ const Contact = () => {
               />
 
               <p className="text-sm leading-6 text-white/55">
-                Tell us what you need and we'll help you find the right cleaning
-                solution for your space.
+                Tell us what you need and we&apos;ll help you find the right
+                cleaning solution for your space.
               </p>
             </div>
           </div>
@@ -205,13 +210,14 @@ const Contact = () => {
                   </h3>
 
                   <p className="mt-2 text-sm leading-6 text-slate-500">
-                    Fill out the form below and we'll use your information to
-                    understand what you're looking for.
+                    Fill out the form below and we&apos;ll use your information
+                    to understand what you&apos;re looking for.
                   </p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-5">
                   {/* Name */}
+
                   <div>
                     <label
                       htmlFor="name"
@@ -231,6 +237,7 @@ const Contact = () => {
                   </div>
 
                   {/* Email + Phone */}
+
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div>
                       <label
@@ -269,6 +276,7 @@ const Contact = () => {
                   </div>
 
                   {/* Service + Date */}
+
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div>
                       <label
@@ -322,6 +330,7 @@ const Contact = () => {
                   </div>
 
                   {/* Message */}
+
                   <div>
                     <label
                       htmlFor="message"
@@ -341,6 +350,7 @@ const Contact = () => {
                   </div>
 
                   {/* Submit */}
+
                   <button
                     type="submit"
                     className="group inline-flex min-h-[54px] w-full items-center justify-center gap-2 rounded-full bg-[var(--dark)] px-6 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[var(--primary)] hover:shadow-lg"
@@ -373,8 +383,8 @@ const Contact = () => {
                 </h3>
 
                 <p className="mt-3 max-w-md text-sm leading-7 text-slate-500 sm:text-base">
-                  Thank you for reaching out to Éclat. We'll review your request
-                  and get back to you with the next steps.
+                  Thank you for reaching out to Éclat. We&apos;ll review your
+                  request and get back to you with the next steps.
                 </p>
 
                 <button
@@ -400,8 +410,8 @@ const Contact = () => {
           />
 
           <p className="text-xs leading-5 text-slate-500 sm:text-sm">
-            No complicated process. Just tell us what you need and we'll take it
-            from there.
+            No complicated process. Just tell us what you need and we&apos;ll
+            take it from there.
           </p>
         </div>
       </div>

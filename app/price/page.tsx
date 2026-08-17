@@ -53,12 +53,9 @@ const Pricing = () => {
   return (
     <section
       id="pricing"
-      className="relative overflow-hidden bg-[var(--background)] py-20 sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-[var(--background)] py-16 sm:py-20 lg:py-24"
     >
-      {/* =====================================================
-          BACKGROUND DECORATION
-      ====================================================== */}
-
+      {/* Background decoration */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-cyan-100/60 blur-3xl"
@@ -70,10 +67,7 @@ const Pricing = () => {
       />
 
       <div className="container relative z-10">
-        {/* =====================================================
-            SECTION HEADER
-        ====================================================== */}
-
+        {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center">
           <span className="section-label justify-center">Packages</span>
 
@@ -84,71 +78,56 @@ const Pricing = () => {
             </span>
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base sm:leading-8">
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base sm:leading-7">
             Choose the type of cleaning that fits your space. Every job is
             different, so we provide personalized quotes based on the size,
             condition, and needs of your space.
           </p>
         </div>
 
-        {/* =====================================================
-            PACKAGE CARDS
-        ====================================================== */}
-
-        <div className="mx-auto mt-12 grid max-w-6xl gap-6 sm:mt-14 lg:grid-cols-3 lg:items-stretch lg:gap-7">
+        {/* Package Cards */}
+        <div className="mx-auto mt-10 grid max-w-6xl gap-5 sm:mt-12 lg:grid-cols-3 lg:items-stretch">
           {packages.map((pkg) => (
             <article
               key={pkg.name}
-              className={`relative flex h-full flex-col rounded-[1.75rem] border bg-white p-6 shadow-[0_12px_40px_rgba(11,31,42,0.07)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(11,31,42,0.13)] sm:p-7 ${
+              className={`relative flex h-full flex-col rounded-[1.5rem] border bg-white p-6 shadow-[0_10px_30px_rgba(11,31,42,0.06)] transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_20px_50px_rgba(11,31,42,0.12)] sm:p-7 ${
                 pkg.popular
-                  ? 'border-[var(--primary)] lg:scale-[1.03]'
+                  ? 'border-[var(--primary)] lg:scale-[1.02]'
                   : 'border-slate-100'
               }`}
             >
-              {/* =================================================
-                  POPULAR BADGE
-              ================================================== */}
-
+              {/* Popular Badge */}
               {pkg.popular && (
                 <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-                  <div className="flex items-center gap-1.5 whitespace-nowrap rounded-full bg-[var(--primary)] px-4 py-2 text-xs font-bold text-white shadow-lg">
-                    <Star size={14} fill="currentColor" />
+                  <div className="flex items-center gap-1.5 whitespace-nowrap rounded-full bg-[var(--primary)] px-4 py-1.5 text-xs font-bold text-white shadow-md">
+                    <Star size={13} fill="currentColor" />
                     Most Popular
                   </div>
                 </div>
               )}
 
-              {/* =================================================
-                  ICON
-              ================================================== */}
-
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--secondary-light)] text-[var(--primary)]">
-                <Sparkles size={22} />
+              {/* Icon */}
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--secondary-light)] text-[var(--primary)]">
+                <Sparkles size={21} />
               </div>
 
-              {/* =================================================
-                  PACKAGE NAME
-              ================================================== */}
-
-              <h3 className="mt-5 text-2xl font-bold text-[var(--dark)]">
+              {/* Package Name */}
+              <h3 className="mt-4 text-xl font-bold text-[var(--dark)] sm:text-2xl">
                 {pkg.name}
               </h3>
 
               {/* Description */}
-              <p className="mt-3 min-h-[72px] text-sm leading-6 text-slate-500">
+              <p className="mt-2 text-sm leading-6 text-slate-500">
                 {pkg.description}
               </p>
 
-              {/* =================================================
-                  PRICE
-              ================================================== */}
-
-              <div className="mt-6 border-y border-slate-100 py-5">
+              {/* Price */}
+              <div className="mt-5 border-y border-slate-100 py-4">
                 <p className="text-xs font-semibold uppercase tracking-[0.15em] text-slate-400">
                   Pricing
                 </p>
 
-                <p className="mt-1 text-xl font-bold text-[var(--dark)]">
+                <p className="mt-1 text-lg font-bold text-[var(--dark)]">
                   {pkg.price}
                 </p>
 
@@ -157,16 +136,13 @@ const Pricing = () => {
                 </p>
               </div>
 
-              {/* =================================================
-                  FEATURES
-              ================================================== */}
-
-              <div className="mt-6 flex-1">
-                <p className="mb-4 text-xs font-bold uppercase tracking-[0.15em] text-[var(--dark)]">
-                  What's included
+              {/* Features */}
+              <div className="mt-5 flex-1">
+                <p className="mb-3 text-xs font-bold uppercase tracking-[0.15em] text-[var(--dark)]">
+                  What&apos;s included
                 </p>
 
-                <ul className="space-y-3">
+                <ul className="space-y-2.5">
                   {pkg.features.map((feature) => (
                     <li
                       key={feature}
@@ -182,14 +158,11 @@ const Pricing = () => {
                 </ul>
               </div>
 
-              {/* =================================================
-                  CTA
-              ================================================== */}
-
-              <div className="mt-8">
+              {/* CTA */}
+              <div className="mt-6">
                 <Link
                   href="/booking"
-                  className={`group flex min-h-[52px] w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold transition-all duration-300 ${
+                  className={`group flex min-h-[48px] w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold transition-all duration-300 ${
                     pkg.popular
                       ? 'bg-[var(--dark)] text-white hover:bg-[var(--primary)]'
                       : 'border border-slate-200 bg-white text-[var(--dark)] hover:border-[var(--primary)] hover:bg-[var(--primary)] hover:text-white'
@@ -206,35 +179,32 @@ const Pricing = () => {
           ))}
         </div>
 
-        {/* =====================================================
-            CUSTOM CLEANING CTA
-        ====================================================== */}
-
-        <div className="mx-auto mt-10 max-w-6xl overflow-hidden rounded-[1.75rem] bg-[var(--dark)] px-6 py-8 text-white sm:mt-12 sm:px-10 sm:py-10">
-          <div className="flex flex-col gap-7 lg:flex-row lg:items-center lg:justify-between">
+        {/* Custom Cleaning CTA */}
+        <div className="mx-auto mt-8 max-w-6xl overflow-hidden rounded-[1.5rem] bg-[var(--dark)] px-6 py-7 text-white sm:mt-10 sm:px-8 sm:py-8">
+          <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl">
               <div className="flex items-center gap-2">
-                <Sparkles size={17} className="text-cyan-300" />
+                <Sparkles size={16} className="text-cyan-300" />
 
                 <span className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">
                   Need something different?
                 </span>
               </div>
 
-              <h3 className="mt-3 text-2xl font-bold leading-tight sm:text-3xl">
+              <h3 className="mt-2 text-xl font-bold leading-tight sm:text-2xl">
                 We can create a cleaning plan around your needs.
               </h3>
 
-              <p className="mt-3 text-sm leading-6 text-white/65 sm:text-base">
+              <p className="mt-2 text-sm leading-6 text-white/65 sm:text-base">
                 Have a larger space, recurring cleaning needs, or a specific
-                request? Tell us what you're looking for and we'll help create
-                the right plan.
+                request? Tell us what you&apos;re looking for and we&apos;ll
+                help create the right plan.
               </p>
             </div>
 
             <Link
               href="/booking"
-              className="group inline-flex min-h-[52px] w-full shrink-0 items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-bold text-[var(--dark)] transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-50 sm:w-auto sm:px-7"
+              className="group inline-flex min-h-[48px] w-full shrink-0 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-[var(--dark)] transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-50 sm:w-auto sm:px-7"
             >
               Request a Custom Quote
               <ArrowRight
